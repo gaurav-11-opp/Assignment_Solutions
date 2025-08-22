@@ -1,12 +1,16 @@
 #include <iostream>
 using namespace std;
+
 int main() {
-    int numberOfStudents;
-    cout << "Enter the number of students: ";
-    cin >> numberOfStudents;
-    int handshakes = (numberOfStudents * (numberOfStudents - 1)) / 2;
-    cout << "The maximum number of handshakes among " << numberOfStudents 
-         << " students is " << handshakes << endl;
+    double feet;
+    cout << "Enter distance in feet: ";
+    cin >> feet;
+
+    double yards = feet / 3;
+    double miles = yards / 1760;
+
+    cout << "The distance in yards is " << yards
+         << " while the distance in miles is " << miles << endl;
 
     return 0;
 }
