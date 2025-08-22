@@ -1,13 +1,16 @@
 #include <iostream>
 using namespace std;
+
 int main() {
-    double feet;
-    cout << "Enter the distance in feet: ";
-    cin >> feet;
-    double yards = feet / 3.0;        
-    double miles = yards / 1760.0;    
-    cout << "The distance is " << feet << " feet, which is " 
-         << yards << " yards or " << miles << " miles." << endl;
+    double base, height;
+    cout << "Enter base and height (in cm): ";
+    cin >> base >> height;
+
+    double area_cm = 0.5 * base * height;
+    double area_in = area_cm / (2.54 * 2.54);
+
+    cout << "The Area of the triangle in sq in is " << area_in
+         << " and sq cm is " << area_cm << endl;
 
     return 0;
 }
