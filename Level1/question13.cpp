@@ -1,16 +1,14 @@
 #include <iostream>
 using namespace std;
+
 int main() {
-    double unitPrice;
-    int quantity;
-    cout << "Enter the unit price of the item: INR ";
-    cin >> unitPrice;
-    cout << "Enter the quantity: ";
-    cin >> quantity;
-    double totalPrice = unitPrice * quantity;
-    cout << "The total purchase price is INR " << totalPrice 
-         << " if the quantity is " << quantity 
-         << " and unit price is INR " << unitPrice << endl;
+    double perimeter;
+    cout << "Enter perimeter of square: ";
+    cin >> perimeter;
+
+    double side = perimeter / 4;
+    cout << "The length of the side is " << side
+         << " whose perimeter is " << perimeter << endl;
 
     return 0;
 }
